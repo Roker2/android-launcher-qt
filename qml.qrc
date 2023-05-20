@@ -10,6 +10,7 @@
         <file>HighlightButton.qml</file>
         <file>LauncherPage.qml</file>
         <file>main.qml</file>
+        <file>MusicBoard.qml</file>
         <file>OnBoarding.qml</file>
         <file>Settings.qml</file>
         <file>Shortcut.qml</file>
