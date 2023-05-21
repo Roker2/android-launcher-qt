@@ -100,6 +100,10 @@
         <file>icons/xmpp@4x_104x104px.png</file>
         <file>icons/yalp-store@4x.png</file>
 
+        <file>icons/albom.svg</file>
+        <file>icons/next.svg</file>
+        <file>icons/previous.svg</file>
+
         <file>images/contact-mask.png</file>
         <file>images/open-in-signal_dark@2x.png</file>
         <file>images/open-in-signal_dark_2x.png</file>
