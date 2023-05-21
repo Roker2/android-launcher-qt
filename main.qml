@@ -35,6 +35,7 @@ ApplicationWindow {
               if (!appGridLoader.active) appGridLoader.active = true
               if (!springboardLoader.active) springboardLoader.active = true
               if (!settingsPageLoader.active) settingsPageLoader.active = true
+              if (!musicBoardPageLoader.active) musicBoardPageLoader.active = true
               if (mainView.keepLastIndex) {
                   if (mainView.currentIndex === mainView.swipeIndex.ConversationOrNewsOrDetails) {
                       console.log("MainView | Switch to conversation page")
@@ -73,6 +74,7 @@ ApplicationWindow {
               appGridLoader.active = false
               springboardLoader.active = false
               settingsPageLoader.active = false
+              musicBoardPageLoader.active = false
           }
        }
     }
@@ -195,9 +197,10 @@ ApplicationWindow {
             'Preferences' : 0,
             'Apps' : 1,
             'Springboard' : 2,
-            'Collections' : 3,
-            'ConversationOrNewsOrDetails' : 4,
-            'Details' : 5
+            'MusicBoard' : 3,
+            'Collections' : 4,
+            'ConversationOrNewsOrDetails' : 5,
+            'Details' : 6
         }
         property var settingsAction: {
             'CREATE': 0,
@@ -300,6 +303,16 @@ ApplicationWindow {
                 id: springboardLoader
                 anchors.fill: parent
                 sourceComponent: Qt.createComponent("/Springboard.qml", mainView)
+            }
+        }
+
+        Item {
+            id: musicBoardPage
+
+            Loader {
+                id: musicBoardPageLoader
+                anchors.fill: parent
+                sourceComponent: Qt.createComponent("/MusicBoard.qml", mainView)
             }
         }
 
