@@ -87,7 +87,7 @@
         <file>icons/socializer@4x.png</file>
         <file>icons/status.im@4x.png</file>
         <file>icons/twitter@4x.png</file>
-        <file>icons/albom.svg</file>
+        <file>icons/album.svg</file>
         <file>icons/next.svg</file>
         <file>icons/previous.svg</file>
     </qresource>
