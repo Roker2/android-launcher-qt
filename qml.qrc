@@ -4,6 +4,7 @@
         <file>AppGroup.qml</file>
         <file>Checkbox.qml</file>
         <file>Collections.qml</file>
+        <file>ColoredImage.qml</file>
         <file>Conversation.qml</file>
         <file>Details.qml</file>
         <file>Feed.qml</file>
