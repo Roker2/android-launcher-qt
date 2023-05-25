@@ -195,9 +195,9 @@ ApplicationWindow {
         }
         property var swipeIndex: {
             'Preferences' : 0,
-            'Apps' : 1,
-            'Springboard' : 2,
-            'MusicBoard' : 3,
+            'MusicBoard' : 1,
+            'Apps' : 2,
+            'Springboard' : 3,
             'Collections' : 4,
             'ConversationOrNewsOrDetails' : 5,
             'Details' : 6
@@ -287,6 +287,16 @@ ApplicationWindow {
         }
 
         Item {
+            id: musicBoardPage
+
+            Loader {
+                id: musicBoardPageLoader
+                anchors.fill: parent
+                sourceComponent: Qt.createComponent("/MusicBoard.qml", mainView)
+            }
+        }
+
+        Item {
             id: appGrid
 
             Loader {
@@ -303,16 +313,6 @@ ApplicationWindow {
                 id: springboardLoader
                 anchors.fill: parent
                 sourceComponent: Qt.createComponent("/Springboard.qml", mainView)
-            }
-        }
-
-        Item {
-            id: musicBoardPage
-
-            Loader {
-                id: musicBoardPageLoader
-                anchors.fill: parent
-                sourceComponent: Qt.createComponent("/MusicBoard.qml", mainView)
             }
         }
 
