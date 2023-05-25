@@ -104,6 +104,8 @@
         <file>icons/album.svg</file>
         <file>icons/next.svg</file>
         <file>icons/previous.svg</file>
+        <file>icons/pause.svg</file>
+        <file>icons/play.svg</file>
 
         <file>images/contact-mask.png</file>
         <file>images/open-in-signal_dark@2x.png</file>
