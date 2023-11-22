@@ -131,16 +131,8 @@ Page {
 
             ColoredImage {
                 anchors.fill: parent
-                source: "/icons/pause.svg"
+                source: playButton.playing ? "/icons/pause.svg" : "/icons/play.svg"
                 color: Universal.foreground
-                visible: playButton.playing
-            }
-
-            ColoredImage {
-                anchors.fill: parent
-                source: "/icons/play.svg"
-                color: Universal.foreground
-                visible: !playButton.playing
             }
         }
 
