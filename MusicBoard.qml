@@ -150,6 +150,12 @@ LauncherPage {
                 }
             } else if (type === "volla.launcher.gotPlayingStatus") {
                 playButton.playing = message["playingStatus"];
+            } else if (type === "volla.launcher.playerAvailable") {
+                if (message["hasPlayer"] === false) {
+                    trackName.text = "";
+                    trackAuthor.text = "";
+                    albumPic.source = "";
+                }
             }
         }
     }
