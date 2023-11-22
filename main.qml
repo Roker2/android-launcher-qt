@@ -260,7 +260,7 @@ ApplicationWindow {
             {"id" : actionType.ShowNews, "name": qsTr("Recent News"), "activated" : true},
             {"id" : actionType.ShowThreads, "name": qsTr("Recent Threads"), "activated" : true},
             {"id" : actionType.ShowContacts, "name": qsTr("Recent People"), "activated" : true},
-            {"id" : actionType.ShowMusicBoard, "name" : qsTr("Music Player"), "actiavated": false}]
+            {"id" : actionType.ShowMusicBoard, "name" : qsTr("Music Player"), "activated": false}]
         property var timeStamp: 0
         property var lastCheckOfThreads: 0
         property var lastCheckOfCalls: 0
