@@ -58,7 +58,7 @@ public class MusicBoardNotificationListenerService extends NotificationListenerS
 
     @Override
     public void onNotificationRemoved(StatusBarNotification sbn){
-      // Implement what you want here
+        dispatchSessionData();
     }
 
     void dispatchSessionData() {
