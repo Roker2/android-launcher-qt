@@ -25,6 +25,7 @@ import java.util.List;
 public class MusicBoardNotificationListenerService extends NotificationListenerService {
     public static final String SEND_PLAY_PAUSE_TRACK = "volla.launcher.playPauseTrack";
     public static final String GOT_TRACK_PLAYING_STATUS = "volla.launcher.gotPlayingStatus";
+    public static final String GET_TRACK_INFO = "volla.launcher.getTrackInfo";
     public static final String GOT_TRACK_INFO = "volla.launcher.trackInfo";
     public static final String GOT_PLAYER_AVAILABLE = "volla.launcher.playerAvailable";
     public static final String SEND_NEXT_TRACK = "volla.launcher.nextTrack";
@@ -181,6 +182,8 @@ public class MusicBoardNotificationListenerService extends NotificationListenerS
                     transportControls.skipToPrevious();
                 } else if (type.equals(SEND_PLAY_PAUSE_TRACK)) {
                     playPause(currentController);
+                } else if (type.equals(GET_TRACK_INFO)) {
+                    dispatchSessionData();
                 }
             }
         });
