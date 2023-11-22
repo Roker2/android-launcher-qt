@@ -144,7 +144,7 @@ Page {
     Connections {
         target: AN.SystemDispatcher
         onDispatched: {
-            if (type === "volla.launcher.trackChanged") {
+            if (type === "volla.launcher.trackInfo") {
                 trackName.text = message["trackName"];
                 trackAuthor.text = message["trackAuthor"];
                 console.log("MusicBoard |", message["albumPic"]);
