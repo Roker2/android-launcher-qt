@@ -3,13 +3,8 @@ import QtQuick.Controls 2.5
 import QtQuick.Controls.Universal 2.12
 import AndroidNative 1.0 as AN
 
-Page {
+LauncherPage {
     id: musicBoard
-
-    background: Rectangle {
-        anchors.fill: parent
-        color: "transparent"
-    }
 
     Label {
         id: headerTitle
