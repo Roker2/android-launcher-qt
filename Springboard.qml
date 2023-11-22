@@ -821,7 +821,7 @@ LauncherPage {
             }
 
             if (selectedMenuItem !== selectedItem) {
-                console.log("Springboard | Update selected meneu item to " + selectedItem.text)
+                console.log("Springboard | Update selected menu item to", selectedItem.text)
                 selectedMenuItem = selectedItem
             }
         }        
